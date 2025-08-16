@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.top-bar {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+
+.header {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-badge {
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23d4a574" width="1200" height="600"/><circle fill="%23f4e4c1" cx="300" cy="150" r="50"/><circle fill="%23f4e4c1" cx="800" cy="200" r="30"/><circle fill="%23e6b887" cx="600" cy="300" r="40"/><text x="600" y="320" text-anchor="middle" fill="%23fff" font-size="16">Imagen de pasta italiana</text></svg>');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #e91e63;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-tertiary {
+    background-color: #4caf50;
+    color: white;
+}
+
+.street-snacks {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    width: 200px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-left: 240px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item1 { background: linear-gradient(45deg, #d4a574, #e6b887); }
+.item2 { background: linear-gradient(45deg, #ff6b35, #f7931e); }
+.item3 { background: linear-gradient(45deg, #ff9800, #ffc107); }
+.item4 { background: linear-gradient(45deg, #8bc34a, #4caf50); }
+.item5 { background: linear-gradient(45deg, #2196f3, #03a9f4); }
+.item6 { background: linear-gradient(45deg, #9c27b0, #e91e63); }
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+.menu-item-image img:hover {
+    transform: scale(1.05);
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.menu-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.menu-item-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.menu-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .sidebar li {
+        white-space: nowrap;
+        border-bottom: none;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+   
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
