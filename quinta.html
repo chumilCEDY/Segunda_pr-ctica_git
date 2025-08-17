@@ -6,12 +6,49 @@
     <title>FIAMBRE</title>
     <link rel="stylesheet" href="estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+
+        /* Puse el estilo de esta páquina aquí por que el archivo estilo.css es compartido*/
+.main-header {
+    background-color: white;
+    height: 150px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    z-index: 1000;
+}
+
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+}
+
+
+.logo {
+    color: #8B0000; 
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header-content container">
-            <div class="d-flex align-items-center">
-                <div class="logo">Las 5 comidas más tradicionales de Guatemala</div>
+    </head>
+<body>
+    <header class="main-header">
+        <div class="header-overlay"></div>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">Sabores Tradicionaes de Guatemala</div>
             </div>
         </div>
     </header>
@@ -225,74 +262,68 @@
         </div>
     </section>
 
-    <!-- Street Snacks Section -->
-    <section class="street-snacks py-5">
+
+    <section class="py-5"> 
         <div class="container">
             <h2 class="section-title text-center mb-5">Otras Comidas Tradicionales</h2>
             
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item1 card-img-top"></div>
+                    <div class="card h-100 border-0"> 
+                        <img src="img/pepian.jpg" class="card-img-top img-fluid" alt="Pepián">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Pepián</h3>
-                            <p class="menu-item-description card-text">Uno de los platillos más antiguos de Guatemala, con influencia maya y española.</p>
-                            <div class="menu-item-price">Plato Patrimonial</div>
+                            <h3 class="card-title">Pepián</h3>
+                            <p class="card-text">Uno de los platillos más antiguos de Guatemala, con influencia maya y española.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item2 card-img-top"></div>
+                    <div class="card h-100 border-0">
+                        <img src="img/kakik.jpg" class="card-img-top img-fluid" alt="Kak'ik">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Kak'ik</h3>
-                            <p class="menu-item-description card-text">Sopa tradicional q'eqchi' con pavo, especias y chiles.</p>
-                            <div class="menu-item-price">Origen Maya</div>
+                            <h3 class="card-title">Kak'ik</h3>
+                            <p class="card-text">Sopa tradicional q'eqchi' con pavo, especias y chiles.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item3 card-img-top"></div>
+                    <div class="card h-100 border-0">
+                        <img src="img/jocon.jpg" class="card-img-top img-fluid" alt="Jocón">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Jocón</h3>
-                            <p class="menu-item-description card-text">Guiso con pollo en una salsa verde de miltomate y hierbas.</p>
-                            <div class="menu-item-price">Tradición Familiar</div>
+                            <h3 class="card-title">Jocón</h3>
+                            <p class="card-text">Guiso con pollo en una salsa verde de miltomate y hierbas.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item4 card-img-top"></div>
+                    <div class="card h-100 border-0">
+                        <img src="img/tamales.jpg" class="card-img-top img-fluid" alt="Tamales">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Tamales</h3>
-                            <p class="menu-item-description card-text">Presentes en diversas variedades en todo el país.</p>
-                            <div class="menu-item-price">Variedad Regional</div>
+                            <h3 class="card-title">Tamales</h3>
+                            <p class="card-text">Presentes en diversas variedades en todo el país.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item5 card-img-top"></div>
+                    <div class="card h-100 border-0">
+                        <img src="img/fiambre1.jpg" class="card-img-top img-fluid" alt="Fiambre">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Fiambre</h3>
-                            <p class="menu-item-description card-text">La ensalada fría más elaborada y tradicional de Guatemala.</p>
-                            <div class="menu-item-price">Patrimonio Cultural</div>
+                            <h3 class="card-title">Fiambre</h3>
+                            <p class="card-text">La ensalada fría más elaborada y tradicional de Guatemala.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item card h-100">
-                        <div class="menu-item-image item6 card-img-top"></div>
+                    <div class="card h-100 border-0">
+                        <img src="img/mole.jpg" class="card-img-top img-fluid" alt="Plátanos en Mole">
                         <div class="card-body">
-                            <h3 class="menu-item-title card-title">Plátanos en Mole</h3>
-                            <p class="menu-item-description card-text">Postre tradicional con plátanos maduros y salsa de chocolate.</p>
-                            <div class="menu-item-price">Dulce Tradición</div>
+                            <h3 class="card-title">Plátanos en Mole</h3>
+                            <p class="card-text">Postre tradicional con plátanos maduros y salsa de chocolate.</p>
                         </div>
                     </div>
                 </div>
@@ -300,16 +331,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-           HECHO POR:
-        NATALIA
-        WENDY
-        HERIELIS
         </div>
-    </footer>
-
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
